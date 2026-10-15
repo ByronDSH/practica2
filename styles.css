@@ -95,18 +95,104 @@ hero-section {
 }
 
 /* Tarjetas de mascotas */
-.tarjetas {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+/* --- Sección de Tarjetas de Mascotas --- */
+.mascotas-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.tarjeta {
-  border: 1px solid #ccc;
-  background: white;
-  padding: 1rem;
-  width: 200px;
-  text-align: center;
+.mascotas-section h2 {
+    font-size: 2.2rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Contenedor flexible/Grid para las 3 tarjetas */
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que se acomoden en filas si no caben */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.mascota-card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto HOVER: eleva la tarjeta y acentúa la sombra */
+.mascota-card:hover {
+    transform: translateY(-10px); /* Hace que la tarjeta se "levante" */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.mascota-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+}
+
+/* Cuerpo interno de la tarjeta */
+.card-body {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.mascota-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.mascota-desc {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Botón Adoptar */
+.btn-adoptar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.btn-adoptar:hover {
+    background-color: #45a049;
 }
 
 /* Formulario */
