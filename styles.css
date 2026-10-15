@@ -328,3 +328,46 @@ hero-section {
     background-color: #ff6b6b;
     color: #ffffff;
 }
+/* 
+  --- Diseño Responsivo (Pantallas menores a 600px) ---*/
+@media screen and (max-width: 600px) {
+    header nav, 
+    .nav-container, 
+    nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+
+    header nav a, 
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Reducir ligeramente el tamaño del título principal (Hero) en celulares */
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-slogan {
+        font-size: 1rem;
+    }
+
+    /* 2. Tarjetas de mascotas en una sola columna */
+    .tarjetas-container {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center;    /* Las centra en la pantalla */
+        gap: 20px;
+    }
+
+    .mascota-card {
+        width: 100%;            /* Ocupa todo el ancho disponible con márgenes */
+        max-width: 350px;       /* Limita el ancho máximo para que no se vea gigante */
+    }
+
+    /* Ajuste general de contenedores de secciones para móviles */
+    .contacto-container {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
+}
