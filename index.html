@@ -90,23 +90,42 @@
     </section>
 
     <!-- Sección contacto -->
-    <section id="contacto" class="seccion">
-      <h2>Contáctanos</h2>
-      <form class="formulario">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre">
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" name="correo">
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje"></textarea>
-        <button type="submit" class="boton">Enviar</button>
-      </form>
-    </section>
-  </main>
+<section id="contacto" class="contacto-section">
+    <h2>Contáctanos y Adopta</h2>
+    <p class="section-subtitle">¿Tienes dudas o quieres iniciar el proceso de adopción? Escríbenos.</p>
+    
+    <div class="contacto-container">
+        <form class="contacto-form">
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" required>
+            </div>
 
-  <footer class="pie">
-    <p>© 2026 Adopta una Mascota — Proyecto escolar</p>
-    <p>Facebook | Instagram | X</p>
-  </footer>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos por qué mascota te interesas..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- Pie de Página (Footer) -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Refugio Adopta una Mascota. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener">Facebook</a>
+            <a href="#" target="_blank" rel="noopener">Instagram</a>
+            <a href="#" target="_blank" rel="noopener">Twitter / X</a>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
