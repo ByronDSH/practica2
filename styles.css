@@ -29,6 +29,14 @@ body {
   z-index: 1000;    /* Asegura que esté por encima de las demás secciones */
 }
 
+.descripcion {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 #menu a {
   color: white;
   text-decoration: none;
