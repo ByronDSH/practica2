@@ -30,3 +30,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // Observar cada sección de la página
   sections.forEach((section) => observer.observe(section));
 });
+
+// Lógica para mostrar y cerrar la imagen flotante
+const btnMostrar = document.getElementById("btnMostrar");
+const modalImagen = document.getElementById("modalImagen");
+const btnCerrar = document.getElementById("btnCerrar");
+
+if (btnMostrar && modalImagen && btnCerrar) {
+  // Al hacer clic en el botón, se muestra la imagen cambiando el display a flex
+  btnMostrar.addEventListener("click", () => {
+    modalImagen.style.display = "flex";
+  });
+
+  // Al hacer clic en la equis, se oculta la imagen
+  btnCerrar.addEventListener("click", () => {
+    modalImagen.style.display = "none";
+  });
+
+  // Opcional: Si el usuario hace clic en el fondo oscuro fuera de la foto, también se cierra
+  modalImagen.addEventListener("click", (e) => {
+    if (e.target === modalImagen) {
+      modalImagen.style.display = "none";
+    }
+  });
+}
