@@ -37,7 +37,7 @@ Sigue estos pasos para ejecutar el proyecto en tu entorno local:
 ## Colaboradores
 
 1. byronDSH
-2. luis142213
+2. luis142213-a11y
 
 
 
