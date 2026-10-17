@@ -95,18 +95,104 @@ hero-section {
 }
 
 /* Tarjetas de mascotas */
-.tarjetas {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
+/* --- Sección de Tarjetas de Mascotas --- */
+.mascotas-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
-.tarjeta {
-  border: 1px solid #ccc;
-  background: white;
-  padding: 1rem;
-  width: 200px;
-  text-align: center;
+.mascotas-section h2 {
+    font-size: 2.2rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #666666;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Contenedor flexible/Grid para las 3 tarjetas */
+.tarjetas-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Permite que se acomoden en filas si no caben */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.mascota-card {
+    background-color: #ffffff;
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+/* Efecto HOVER: eleva la tarjeta y acentúa la sombra */
+.mascota-card:hover {
+    transform: translateY(-10px); /* Hace que la tarjeta se "levante" */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos para las imágenes de las tarjetas */
+.mascota-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Mantiene la proporción de la imagen sin deformarla */
+}
+
+/* Cuerpo interno de la tarjeta */
+.card-body {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+.mascota-info {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.mascota-desc {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Botón Adoptar */
+.btn-adoptar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.btn-adoptar:hover {
+    background-color: #45a049;
 }
 
 /* Formulario */
@@ -121,10 +207,167 @@ hero-section {
   padding: 0.4rem;
 }
 
-/* Pie de página */
-.pie {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+/* --- Estilos de la Sección de Contacto --- */
+.contacto-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.contacto-section h2 {
+    font-size: 2.2rem;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.contacto-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fdfdfd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #444444;
+    margin-bottom: 8px;
+}
+
+/* Estilizando inputs y textarea (bordes, colores, placeholders) */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box; /* Evita que el padding rompa el ancho del 100% */
+}
+
+/* Efecto al hacer foco en los campos */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4A90E2;
+    background-color: #ffffff;
+    outline: none;
+}
+
+/* Estilos de los Placeholders */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+/* Botón Enviar con Hover */
+.btn-enviar {
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-enviar:hover {
+    background-color: #357abd;
+    transform: translateY(-2px);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    color: #bdc3c7;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Enlaces de Redes Sociales */
+.social-links a {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ff6b6b;
+    color: #ffffff;
+}
+/* 
+  --- Diseño Responsivo (Pantallas menores a 600px) ---*/
+@media screen and (max-width: 600px) {
+    header nav, 
+    .nav-container, 
+    nav ul {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px;
+    }
+
+    header nav a, 
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    /* Reducir ligeramente el tamaño del título principal (Hero) en celulares */
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-slogan {
+        font-size: 1rem;
+    }
+
+    /* 2. Tarjetas de mascotas en una sola columna */
+    .tarjetas-container {
+        flex-direction: column; /* Apila las tarjetas verticalmente */
+        align-items: center;    /* Las centra en la pantalla */
+        gap: 20px;
+    }
+
+    .mascota-card {
+        width: 100%;            /* Ocupa todo el ancho disponible con márgenes */
+        max-width: 350px;       /* Limita el ancho máximo para que no se vea gigante */
+    }
+
+    /* Ajuste general de contenedores de secciones para móviles */
+    .contacto-container {
+        padding: 20px 15px;
+        margin: 0 10px;
+    }
 }
