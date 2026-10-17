@@ -9,8 +9,8 @@
 <body>
   <!-- Encabezado: logo y menú de navegación -->
   <header class="encabezado">
-    <h1 class="logo">🐾 Adopta una Mascota</h1>
-    <nav class="menu">
+    <h1 class="logo">🐾 Hogar Animal</h1>
+    <nav id="menu">
       <a href="#inicio">Inicio</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#adopta">Adóptame</a>
@@ -29,19 +29,23 @@
     </div>
 </section>
 
+
     <!-- Sección sobre nosotros -->
-    <section id="nosotros" class="seccion">
+    <section id="nosotros" class="section">
       <h2>Sobre nosotros</h2>
-      <p>Somos un refugio sin fines de lucro dedicado a rescatar,
-      cuidar y encontrar un hogar para perros y gatos abandonados.</p>
+      <p class = "descripcion">Somos un refugio sin fines de lucro dedicado a rescatar, perros y gatos de lugares abandonados, de lugares sin familia, nosotros cuidamos a estos pequeños animalitos con recursos que salen de las donaciones de personas que, como tu les interesa que estos pequeños esten en las mejores condiciones. Nuestra ayuda no se queda ahí, si no que se extiende mas allá, en encontrar una familia que lo quiera tanto como cualquier mascota.<br><br>Estos son nuestros valores:</p>
+      <br>
+      <br>
       <ul class="valores">
-        <li>Responsabilidad</li>
-        <li>Cuidado</li>
-        <li>Amor</li>
+        <li class="valor">Responsabilidad. Todos los contribuyentes son responsables en el cuidado de cada animalito que esta en nuestro refugio.</li>
+        <li class="valor">Cuidado. Cada voluntario ayuda exaustivamente en el cuidado de los animales, gracias a nuestra pasion por ellos.</li>
+        <li class="valor">Amor. Cada gatito y perrito que pasa en el refugio recibe todo nuestro amor y afecto, no importando raza o similar.</li>
       </ul>
+      <img src = "imagenesRefugio/refugioCasa.jfif" alt = "Imagen del refugio" class = "imagenRefugio">
     </section>
 
     <!-- Sección adopta: tarjetas de mascotas -->
+<<<<<<< HEAD
     <section id="adopta" class="mascotas-section">
     <h2>Nuestras Mascotas en Adopción</h2>
     <p class="section-subtitle">Conoce a nuestros peludos que están buscando un hogar amoroso.</p>
@@ -81,15 +85,46 @@
         </div>
     </div>
 </section>
+=======
+    <section id="adopta" class="section">
+      <h2>Adóptame</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <img src="https://via.placeholder.com/200x150?text=Firulais" alt="Foto de Firulais">
+          <h3>Firulais</h3>
+          <p>Perro, 2 años. Juguetón y cariñoso.</p>
+        </article>
+        <article class="tarjeta">
+          <img src="https://via.placeholder.com/200x150?text=Michi" alt="Foto de Michi">
+          <h3>Michi</h3>
+          <p>Gato, 1 año. Tranquilo y dormilón.</p>
+        </article>
+        <article class="tarjeta">
+          <img src="https://via.placeholder.com/200x150?text=Rocky" alt="Foto de Rocky">
+          <h3>Rocky</h3>
+          <p>Conejo, 3 años. Le gusta la zanahoria.</p>
+        </article>
+      </div>
+    </section>
+>>>>>>> feature/visita
 
     <!-- Sección visítanos -->
-    <section id="visita" class="seccion">
+    <section id="visita" class="section" >
       <h2>Visítanos</h2>
-      <p><strong>Dirección:</strong> Calle de los Animalitos #123, Ciudad.</p>
-      <p><strong>Horario:</strong> Lunes a sábado, 10:00 a 17:00 hrs.</p>
+      <p><strong>   Dirección:</strong> Calle de los Animalitos #123, Ciudad de guadalajara. &#127968;</p>
+      <p><strong>   Horario:</strong> Lunes a sábado, 10:00 a 17:00 hrs.</p><p> &#128682; </p>
+      <button id="btnMostrar" class="boton">Como llegar</button>
+      <div id="modalImagen" class="modal">
+      <div class="modal-contenido">
+        <!-- Botón con la equis para cerrar -->
+        <button id="btnCerrar" class="cerrar">&times;</button>
+        <img src="imagenesRefugio/mapaRefugio.jfif" alt="Refugio de animales">
+      </div>
+      </div>
     </section>
 
     <!-- Sección contacto -->
+<<<<<<< HEAD
 <section id="contacto" class="contacto-section">
     <h2>Contáctanos y Adopta</h2>
     <p class="section-subtitle">¿Tienes dudas o quieres iniciar el proceso de adopción? Escríbenos.</p>
@@ -127,5 +162,26 @@
         </div>
     </div>
 </footer>
+=======
+    <section id="contacto" class="section">
+      <h2>Contáctanos</h2>
+      <form class="formulario">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <label for="correo">Correo</label>
+        <input type="email" id="correo" name="correo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje"></textarea>
+        <button type="submit" class="boton">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>© 2026 Adopta una Mascota — Proyecto escolar</p>
+    <p>Facebook | Instagram | X</p>
+  </footer>
+  <script src="javascript.js"></script>
+>>>>>>> feature/visita
 </body>
 </html>
